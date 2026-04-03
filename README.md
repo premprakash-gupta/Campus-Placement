@@ -6,9 +6,15 @@ This is a hackathon-friendly initial architecture + end-to-end CLI + Streamlit +
 
 **Step 1 — Install dependencies**
 
-```powershell
-cd c:\Users\ursha\OneDrive\Desktop\PlaceX
+```bash
+git clone git@github.com:premprakash-gupta/Campus-Placement.git
+cd Campus-Placement
 python -m pip install -r requirements.txt
+OR
+uv init  # Fastest way to create Python virtual environment.
+uv venv
+uv add -r requirements.txt
+
 ```
 
 **Step 2 — Put job data in `data/raw/`** (optional but needed for market charts / `report.json` `market_benchmark`)
