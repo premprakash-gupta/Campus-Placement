@@ -1,0 +1,90 @@
+{
+  "title_filter": "Data Analyst",
+  "job_postings_matched": 408,
+  "top_skills": [
+    {
+      "skill_abr": "IT",
+      "skill_name": "Information Technology",
+      "count": 287
+    },
+    {
+      "skill_abr": "ANLS",
+      "skill_name": "Analyst",
+      "count": 138
+    },
+    {
+      "skill_abr": "RSCH",
+      "skill_name": "Research",
+      "count": 58
+    },
+    {
+      "skill_abr": "ENG",
+      "skill_name": "Engineering",
+      "count": 46
+    },
+    {
+      "skill_abr": "OTHR",
+      "skill_name": "Other",
+      "count": 20
+    },
+    {
+      "skill_abr": "FIN",
+      "skill_name": "Finance",
+      "count": 12
+    },
+    {
+      "skill_abr": "QA",
+      "skill_name": "Quality Assurance",
+      "count": 10
+    },
+    {
+      "skill_abr": "MRKT",
+      "skill_name": "Marketing",
+      "count": 10
+    },
+    {
+      "skill_abr": "ADM",
+      "skill_name": "Administrative",
+      "count": 6
+    },
+    {
+      "skill_abr": "BD",
+      "skill_name": "Business Development",
+      "count": 5
+    },
+    {
+      "skill_abr": "MGMT",
+      "skill_name": "Management",
+      "count": 3
+    },
+    {
+      "skill_abr": "CNSL",
+      "skill_name": "Consulting",
+      "count": 3
+    },
+    {
+      "skill_abr": "PRJM",
+      "skill_name": "Project Management",
+      "count": 2
+    },
+    {
+      "skill_abr": "HR",
+      "skill_name": "Human Resources",
+      "count": 2
+    },
+    {
+      "skill_abr": "GENB",
+      "skill_name": "General Business",
+      "count": 2
+    }
+  ],
+  "salary": {
+    "n_salary_samples": 130,
+    "median": 99920.0,
+    "p25": 83475.0,
+    "p75": 125000.0,
+    "min": 47840.0,
+    "max": 222650.0
+  },
+  "generated_at_utc": "2026-04-02T20:36:27.754519+00:00"
+}

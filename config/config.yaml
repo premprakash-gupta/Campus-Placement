@@ -1,0 +1,38 @@
+pipeline:
+  # Google Trends allows max 5 keywords per comparison
+  top_skills_for_trends: 5
+  keyword_top_n: 20
+  timeframe: "today 12-m"
+  geo: "IN"
+
+skills_lexicon:
+  # A small, hackathon-friendly starting set. Extend patterns as you add more jobs/datasets.
+  - name: Python
+    patterns: ["python"]
+  - name: SQL
+    patterns: ["sql", "postgres", "mysql", "sqlite"]
+  - name: Data Analysis
+    patterns: ["data analysis", "data analyst", "analysis", "eda"]
+  - name: Power BI
+    patterns: ["power bi", "powerbi", "bi dashboard"]
+  - name: Tableau
+    patterns: ["tableau"]
+  - name: Excel
+    patterns: ["excel", "pivot table", "vlookup", "xlookup"]
+  - name: Machine Learning
+    patterns: ["machine learning", "ml", "supervised", "unsupervised"]
+  - name: Statistics
+    patterns: ["statistics", "statistical", "hypothesis testing"]
+  - name: NLP
+    patterns: ["nlp", "natural language processing", "transformers", "bert"]
+  - name: Visualization
+    patterns: ["visualization", "matplotlib", "seaborn", "dashboard"]
+  - name: Data Warehousing
+    patterns: ["data warehouse", "redshift", "snowflake", "bigquery"]
+  - name: ETL
+    patterns: ["etl", "data pipeline", "airflow", "databricks"]
+  - name: APIs
+    patterns: ["api", "rest", "fastapi", "flask"]
+  - name: Web
+    patterns: ["django", "flask", "react", "node"]
+

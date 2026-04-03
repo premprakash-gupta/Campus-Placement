@@ -1,0 +1,453 @@
+{
+  "raw_dir": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw",
+  "files": {
+    "companies\\companies.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\companies\\companies.csv",
+      "n_columns": 10,
+      "columns": [
+        "company_id",
+        "name",
+        "description",
+        "company_size",
+        "state",
+        "country",
+        "city",
+        "zip_code",
+        "address",
+        "url"
+      ],
+      "dtypes": {
+        "company_id": "int64",
+        "name": "object",
+        "description": "object",
+        "company_size": "int64",
+        "state": "object",
+        "country": "object",
+        "city": "object",
+        "zip_code": "int64",
+        "address": "object",
+        "url": "object"
+      },
+      "rows_read": 2,
+      "note": "likely company table; has id-like columns for joins",
+      "head_json": [
+        {
+          "company_id": 1009,
+          "name": "IBM",
+          "description": "At IBM, we do more than work. We create. We create as technologists, developers, and engineers. We create with our partners. We create with our competitors. If you're searching for ways to make the world work better through technology and infrastructure, software and consulting, then we want to work with you.\n\nWe're here to help every creator turn their \"what if\" into what is. Let's create something that will change everything.",
+          "company_size": 7,
+          "state": "NY",
+          "country": "US",
+          "city": "Armonk, New York",
+          "zip_code": 10504,
+          "address": "International Business Machines Corp.",
+          "url": "https://www.linkedin.com/company/ibm"
+        },
+        {
+          "company_id": 1016,
+          "name": "GE HealthCare",
+          "description": "Every day millions of people feel the impact of our intelligent devices, advanced analytics and artificial intelligence. As a leading global medical technology and digital solutions innovator, GE HealthCare enables clinicians to make faster, more informed decisions through intelligent devices, data analytics, applications and services, supported by its Edison intelligence platform.\n\nWith over 100 years of healthcare industry experience and around 50,000 employees globally, the company operates at the center of an ecosystem working toward precision health, digitizing healthcare, helping drive productivity and improve outcomes for patients, providers, health systems and researchers around the world.\n\nWe embrace a culture of respect, transparency, integrity and diversity and we work to create a world where healthcare has no limits.",
+          "company_size": 7,
+          "state": "0",
+          "country": "US",
+          "city": "Chicago",
+          "zip_code": 0,
+          "address": "-",
+          "url": "https://www.linkedin.com/company/gehealthcare"
+        }
+      ]
+    },
+    "companies\\company_industries.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\companies\\company_industries.csv",
+      "n_columns": 2,
+      "columns": [
+        "company_id",
+        "industry"
+      ],
+      "dtypes": {
+        "company_id": "int64",
+        "industry": "object"
+      },
+      "rows_read": 2,
+      "note": "likely company table; has id-like columns for joins",
+      "head_json": [
+        {
+          "company_id": 391906,
+          "industry": "Book and Periodical Publishing"
+        },
+        {
+          "company_id": 22292832,
+          "industry": "Construction"
+        }
+      ]
+    },
+    "companies\\company_specialities.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\companies\\company_specialities.csv",
+      "n_columns": 2,
+      "columns": [
+        "company_id",
+        "speciality"
+      ],
+      "dtypes": {
+        "company_id": "int64",
+        "speciality": "object"
+      },
+      "rows_read": 2,
+      "note": "likely company table; has id-like columns for joins",
+      "head_json": [
+        {
+          "company_id": 22292832,
+          "speciality": "window replacement"
+        },
+        {
+          "company_id": 22292832,
+          "speciality": "patio door replacement"
+        }
+      ]
+    },
+    "companies\\employee_counts.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\companies\\employee_counts.csv",
+      "n_columns": 4,
+      "columns": [
+        "company_id",
+        "employee_count",
+        "follower_count",
+        "time_recorded"
+      ],
+      "dtypes": {
+        "company_id": "int64",
+        "employee_count": "int64",
+        "follower_count": "int64",
+        "time_recorded": "int64"
+      },
+      "rows_read": 2,
+      "note": "likely company table; has id-like columns for joins",
+      "head_json": [
+        {
+          "company_id": 391906,
+          "employee_count": 186,
+          "follower_count": 32508,
+          "time_recorded": 1712346173
+        },
+        {
+          "company_id": 22292832,
+          "employee_count": 311,
+          "follower_count": 4471,
+          "time_recorded": 1712346173
+        }
+      ]
+    },
+    "jobs\\benefits.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\jobs\\benefits.csv",
+      "n_columns": 3,
+      "columns": [
+        "job_id",
+        "inferred",
+        "type"
+      ],
+      "dtypes": {
+        "job_id": "int64",
+        "inferred": "int64",
+        "type": "object"
+      },
+      "rows_read": 2,
+      "note": "likely postings/job table; has id-like columns for joins",
+      "head_json": [
+        {
+          "job_id": 3887473071,
+          "inferred": 0,
+          "type": "Medical insurance"
+        },
+        {
+          "job_id": 3887473071,
+          "inferred": 0,
+          "type": "Vision insurance"
+        }
+      ]
+    },
+    "jobs\\job_industries.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\jobs\\job_industries.csv",
+      "n_columns": 2,
+      "columns": [
+        "job_id",
+        "industry_id"
+      ],
+      "dtypes": {
+        "job_id": "int64",
+        "industry_id": "int64"
+      },
+      "rows_read": 2,
+      "note": "likely postings/job table; has id-like columns for joins",
+      "head_json": [
+        {
+          "job_id": 3884428798,
+          "industry_id": 82
+        },
+        {
+          "job_id": 3887473071,
+          "industry_id": 48
+        }
+      ]
+    },
+    "jobs\\job_skills.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\jobs\\job_skills.csv",
+      "n_columns": 2,
+      "columns": [
+        "job_id",
+        "skill_abr"
+      ],
+      "dtypes": {
+        "job_id": "int64",
+        "skill_abr": "object"
+      },
+      "rows_read": 2,
+      "note": "likely postings/job table; likely skills mapping; has id-like columns for joins",
+      "head_json": [
+        {
+          "job_id": 3884428798,
+          "skill_abr": "MRKT"
+        },
+        {
+          "job_id": 3884428798,
+          "skill_abr": "PR"
+        }
+      ]
+    },
+    "jobs\\salaries.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\jobs\\salaries.csv",
+      "n_columns": 8,
+      "columns": [
+        "salary_id",
+        "job_id",
+        "max_salary",
+        "med_salary",
+        "min_salary",
+        "pay_period",
+        "currency",
+        "compensation_type"
+      ],
+      "dtypes": {
+        "salary_id": "int64",
+        "job_id": "int64",
+        "max_salary": "float64",
+        "med_salary": "float64",
+        "min_salary": "float64",
+        "pay_period": "object",
+        "currency": "object",
+        "compensation_type": "object"
+      },
+      "rows_read": 2,
+      "note": "likely postings/job table; has id-like columns for joins",
+      "head_json": [
+        {
+          "salary_id": 1,
+          "job_id": 3884428798,
+          "max_salary": NaN,
+          "med_salary": 20.0,
+          "min_salary": NaN,
+          "pay_period": "HOURLY",
+          "currency": "USD",
+          "compensation_type": "BASE_SALARY"
+        },
+        {
+          "salary_id": 2,
+          "job_id": 3887470552,
+          "max_salary": 25.0,
+          "med_salary": NaN,
+          "min_salary": 23.0,
+          "pay_period": "HOURLY",
+          "currency": "USD",
+          "compensation_type": "BASE_SALARY"
+        }
+      ]
+    },
+    "mappings\\industries.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\mappings\\industries.csv",
+      "n_columns": 2,
+      "columns": [
+        "industry_id",
+        "industry_name"
+      ],
+      "dtypes": {
+        "industry_id": "int64",
+        "industry_name": "object"
+      },
+      "rows_read": 2,
+      "note": "has id-like columns for joins",
+      "head_json": [
+        {
+          "industry_id": 1,
+          "industry_name": "Defense and Space Manufacturing"
+        },
+        {
+          "industry_id": 3,
+          "industry_name": "Computer Hardware Manufacturing"
+        }
+      ]
+    },
+    "mappings\\skills.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\mappings\\skills.csv",
+      "n_columns": 2,
+      "columns": [
+        "skill_abr",
+        "skill_name"
+      ],
+      "dtypes": {
+        "skill_abr": "object",
+        "skill_name": "object"
+      },
+      "rows_read": 2,
+      "note": "likely skills mapping",
+      "head_json": [
+        {
+          "skill_abr": "ART",
+          "skill_name": "Art/Creative"
+        },
+        {
+          "skill_abr": "DSGN",
+          "skill_name": "Design"
+        }
+      ]
+    },
+    "postings.csv": {
+      "path": "C:\\Users\\ursha\\OneDrive\\Desktop\\PlaceX\\data\\raw\\postings.csv",
+      "n_columns": 31,
+      "columns": [
+        "job_id",
+        "company_name",
+        "title",
+        "description",
+        "max_salary",
+        "pay_period",
+        "location",
+        "company_id",
+        "views",
+        "med_salary",
+        "min_salary",
+        "formatted_work_type",
+        "applies",
+        "original_listed_time",
+        "remote_allowed",
+        "job_posting_url",
+        "application_url",
+        "application_type",
+        "expiry",
+        "closed_time",
+        "formatted_experience_level",
+        "skills_desc",
+        "listed_time",
+        "posting_domain",
+        "sponsored",
+        "work_type",
+        "currency",
+        "compensation_type",
+        "normalized_salary",
+        "zip_code",
+        "fips"
+      ],
+      "dtypes": {
+        "job_id": "int64",
+        "company_name": "object",
+        "title": "object",
+        "description": "object",
+        "max_salary": "float64",
+        "pay_period": "object",
+        "location": "object",
+        "company_id": "float64",
+        "views": "float64",
+        "med_salary": "float64",
+        "min_salary": "float64",
+        "formatted_work_type": "object",
+        "applies": "float64",
+        "original_listed_time": "float64",
+        "remote_allowed": "float64",
+        "job_posting_url": "object",
+        "application_url": "float64",
+        "application_type": "object",
+        "expiry": "float64",
+        "closed_time": "float64",
+        "formatted_experience_level": "float64",
+        "skills_desc": "object",
+        "listed_time": "float64",
+        "posting_domain": "float64",
+        "sponsored": "int64",
+        "work_type": "object",
+        "currency": "object",
+        "compensation_type": "object",
+        "normalized_salary": "float64",
+        "zip_code": "int64",
+        "fips": "int64"
+      },
+      "rows_read": 2,
+      "note": "likely postings/job table; likely skills mapping; likely company table; has id-like columns for joins",
+      "head_json": [
+        {
+          "job_id": 921716,
+          "company_name": "Corcoran Sawyer Smith",
+          "title": "Marketing Coordinator",
+          "description": "Job descriptionA leading real estate firm in New Jersey is seeking an administrative Marketing Coordinator with some experience in graphic design. You will be working closely with our fun, kind, ambitious members of the sales team and our dynamic executive team on a daily basis. This is an opportunity to be part of a fast-growing, highly respected real estate brokerage with a reputation for exceptional marketing and extraordinary culture of cooperation and inclusion.Who you are:You must be a well-organized, creative, proactive, positive, and most importantly, kind-hearted person. Please, be responsible, respectful, and cool-under-pressure. Please, be proficient in Adobe Creative Cloud (Indesign, Illustrator, Photoshop) and Microsoft Office Suite. Above all, have fantastic taste and be a good-hearted, fun-loving person who loves working with people and is eager to learn.Role:Our office is a fast-paced environment. You\u2019ll work directly with a Marketing team and communicate daily with other core staff and our large team of agents. This description is a brief overview, but your skills and interests will be considered in what you work on and as the role evolves over time.Agent Assistance- Receive & Organize Marketing Requests from Agents- Track Tasks & Communicate with Marketing team & Agents on Status- Prepare print materials and signs for open houses- Submit Orders to Printers & Communicate & Track DeadlinesGraphic Design & Branding- Managing brand strategy and messaging through website, social media, videos, online advertising, print placement and events- Receive, organize, and prioritize marketing requests from agents- Fulfill agent design requests including postcards, signs, email marketing and property brochures using pre-existing templates and creating custom designs- Maintain brand assets and generic filesEvents & Community- Plan and execute events and promotions- Manage Contacts & Vendors for Event Planning & SponsorshipsOur company is committed to creating a diverse environment and is proud to be an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.Job Type: Full-time\nPay: $18-20/hour\nExpected hours: 35 \u2013 45 per week\nBenefits:Paid time offSchedule:8 hour shiftMonday to FridayExperience:Marketing: 1 year (Preferred)Graphic design: 2 years (Preferred)Work Location: In person\n",
+          "max_salary": 20.0,
+          "pay_period": "HOURLY",
+          "location": "Princeton, NJ",
+          "company_id": 2774458.0,
+          "views": 20.0,
+          "med_salary": NaN,
+          "min_salary": 17.0,
+          "formatted_work_type": "Full-time",
+          "applies": 2.0,
+          "original_listed_time": 1713397508000.0,
+          "remote_allowed": NaN,
+          "job_posting_url": "https://www.linkedin.com/jobs/view/921716/?trk=jobs_biz_prem_srch",
+          "application_url": NaN,
+          "application_type": "ComplexOnsiteApply",
+          "expiry": 1715989508000.0,
+          "closed_time": NaN,
+          "formatted_experience_level": NaN,
+          "skills_desc": "Requirements: \n\nWe are seeking a College or Graduate Student (can also be completed with school) with a focus in Planning, Architecture, Real Estate Development or Management or General Business. Must be able to work in an extremely fast paced environment and able to multitask and prioritize.",
+          "listed_time": 1713397508000.0,
+          "posting_domain": NaN,
+          "sponsored": 0,
+          "work_type": "FULL_TIME",
+          "currency": "USD",
+          "compensation_type": "BASE_SALARY",
+          "normalized_salary": 38480.0,
+          "zip_code": 8540,
+          "fips": 34021
+        },
+        {
+          "job_id": 1829192,
+          "company_name": NaN,
+          "title": "Mental Health Therapist/Counselor",
+          "description": "At Aspen Therapy and Wellness , we are committed to serving clients with best practices to help them with change, improvements and better quality of life. We believe in providing a secure, supportive environment to grow as a clinician and learn how to foster longevity in the career which is part of our mission statement.\nThank you for taking the time to explore a career with us. We are excited to be a new group practice in the community. If you are looking for quality supervision as you work towards licensure and ability to serve populations while accepting a variety of insurance panels, we may be a good fit. Our supervisors are trained in EMDR and utilize a parts work perspective with a trauma lens.\nWe are actively looking to hire a therapist in the area who is passionate about working with adults and committed to growth and excellence in the field. We are located in Old Town Square, Fort Collins.\nWe value and are strengthened by diversity and desire a warm and welcoming place for all people. We believe in racial and ethnic equality, gender equity and social inclusion.\nPosition Requirement Possibilities:A graduate level psychological counseling-related degreeMasters of Social Work (MSW/LSW)Licensed Professional Counselor Candidate (LPCC)Clinical Social worker (LCSW)Professional Counselor (LPC)Marriage/Family Therapist (LMFT)Relating to this?Wanting to deliver high quality mental healthcareSeeking quality supervision and growth in a healthy environmentWhat we offer:Flexible work scheduleW2 Employment - commission basedBuilding to full time workJump of 5% in commission as well as monthly bonus/stipend once full timeWeekly supervision providedPaid weekly team meetings $30/hrTwo paid wellness hours/month $30/hrTelemedicine and in-person flexibilitySupportive work environment with direct access to two supervisorsAdministrative supportApproved professional development training providedFully automated EHR and technology supportStrong work/life balanceJob Duties:Conducting intake assessmentsDeveloping and implementing treatment plans for clients based on assessment and coordinating any additional services needed, revising as necessaryConducting individual sessions as appropriate for the treatment plan of the patientApplying psychotherapeutic techniques and interventions in the delivery of services to individuals for the purpose of treating emotional and behavioral disorders that have been diagnosed in assessmentParticipating in team meetings in order to staff new cases. Presenting appropriate patient information to the team. Recommending effective treatment interventions.Building and maintaining an active caseload with assigned clientsCompleting timely progress notes and treatment updates in the EHR. Maintaining all clinical documentation in accordance with regulatory and accrediting standardsProviding crisis intervention to patients in acute distress and referring as neededPerforming case management and discharge planning as neededExcellent communication and interpersonal skillsCompassionate and empathetic approach to patient carePlease send resume and cover letter to info@aspentherapyandwellness.com\nAbout Aspen Therapy and Wellness LLCAspen Therapy and Wellness is a mental health services provider focusing on work with adults in an outpatient setting, working with a variety of mental health issues both in-person in Old Town Fort Collins and throughout the state of Colorado via telehealth services.\nPlease note that this job description is not exhaustive and additional duties may be assigned as needed.",
+          "max_salary": 50.0,
+          "pay_period": "HOURLY",
+          "location": "Fort Collins, CO",
+          "company_id": NaN,
+          "views": 1.0,
+          "med_salary": NaN,
+          "min_salary": 30.0,
+          "formatted_work_type": "Full-time",
+          "applies": NaN,
+          "original_listed_time": 1712857887000.0,
+          "remote_allowed": NaN,
+          "job_posting_url": "https://www.linkedin.com/jobs/view/1829192/?trk=jobs_biz_prem_srch",
+          "application_url": NaN,
+          "application_type": "ComplexOnsiteApply",
+          "expiry": 1715449887000.0,
+          "closed_time": NaN,
+          "formatted_experience_level": NaN,
+          "skills_desc": NaN,
+          "listed_time": 1712857887000.0,
+          "posting_domain": NaN,
+          "sponsored": 0,
+          "work_type": "FULL_TIME",
+          "currency": "USD",
+          "compensation_type": "BASE_SALARY",
+          "normalized_salary": 83200.0,
+          "zip_code": 80521,
+          "fips": 8069
+        }
+      ]
+    }
+  }
+}
